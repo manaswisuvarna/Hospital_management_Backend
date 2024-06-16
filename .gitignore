@@ -1,2 +1,3 @@
 node_modules
-congig.env
+config.env
+config
