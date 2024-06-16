@@ -12,9 +12,10 @@ export const generatetoken =(user,message,statuscode,res) =>
         Date.now()+ process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000
 
     ),
-    httpOnly:true,
-    secure:true,
-    sameSite:"None"
+    httpOnly: true,
+    secure: true,
+    sameSite: "None"
+    
     
    }).json({//what it will return
     success: true,

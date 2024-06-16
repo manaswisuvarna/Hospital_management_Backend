@@ -10,7 +10,7 @@ import userRouter from "./router/userRouter.js"
 import appointmentRouter  from "./router/appointmentRouter.js";
 
 const app = express()
-config({path: "./config/config.env"}); //path to the config .env file
+config({path: "./config.env"}); //path to the config .env file
 
 app.use(cors({
     origin: [process.env.FRONTEND_URL,process.env.DASHBOARD_URL],

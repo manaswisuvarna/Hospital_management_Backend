@@ -179,7 +179,7 @@ export const logoutAdmin = catchAsyncError(async (req, res, next) => {
             httpOnly: true,
             expires: new Date(Date.now()),
             secure: true,
-            sameSite:"None",
+            sameSite: "None",
         }).json({
             success: true,
             message: "User Log Out Successfully!",
@@ -192,8 +192,8 @@ export const logoutPatient = catchAsyncError(async (req, res, next) => {
         .cookie("patientToken", "", {
             httpOnly: true,
             expires: new Date(Date.now()),
-            sameSite:"None", 
-            secure: true, //can login but cannot logout
+            secure: true,
+            sameSite: "None"//can login but cannot logout
         }).json({
             success: true,
             message: "User Log Out Successfully!",
